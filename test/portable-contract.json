@@ -1,0 +1,6 @@
+{
+  "runtime": "gh/ichinya/lekalo-python#8350ed9e2d1216a0b63d2d4d0f6331cbc6ed4fb3",
+  "path": "server.py",
+  "valid": "from fastmcp import FastMCP\ns = FastMCP('tools')\n@s.tool()\ndef health(): pass",
+  "invalid": "from fastmcp import FastMCP\ns = FastMCP('tools')\ndef health(): pass"
+}
