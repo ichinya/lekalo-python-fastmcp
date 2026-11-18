@@ -1,0 +1,16 @@
+name: Package CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ichinya/lekalo/.github/actions/test-official-package@6f5387d98092d73f011003e62c3a59859b7271e8
+        with:
+          package: lekalo-python-fastmcp
