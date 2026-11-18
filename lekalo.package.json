@@ -1,0 +1,10 @@
+{
+  "schema": "lekalo/package/v1",
+  "id": "lekalo-python-fastmcp",
+  "version": "0.2.0",
+  "kind": "rules",
+  "files": [
+    "contracts/tools.json"
+  ],
+  "rules": "contracts/tools.json"
+}
