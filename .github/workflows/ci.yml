@@ -14,3 +14,11 @@ jobs:
       - uses: ichinya/lekalo-adapter-sdk/.github/actions/package-contract@ebe6ce17bd948d52850fb1a600e07a1ddbee7062
         with:
           host: 9eb07ce8f21f96a9a160d382ac6280b9fa0fbcbe
+  observed-provider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          toolchain: 1.97.0
+      - run: cargo test --locked
